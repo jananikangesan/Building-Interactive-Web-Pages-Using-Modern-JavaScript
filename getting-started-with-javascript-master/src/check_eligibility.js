@@ -11,8 +11,15 @@ for any non-numeric value passed to the function.
 
 */
 
-module.exports = function checkEligibility() {
+module.exports = function checkEligibility(age) {
    
   // Provide Solution Code Here
+  if(typeof(age)!='number'){
+    return "Invalid Age Input, Age Should Only Be Number !!";
+  }
+  else if(age>18){
+    return true;
+  }
+  return false;
 
 }
