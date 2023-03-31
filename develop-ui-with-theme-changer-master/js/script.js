@@ -24,14 +24,11 @@ const themes = {
 }
 
 function changeTheme(event) {
-    // console.log(event);
-    // console.log(Object.keys(themes));
-    // let keys=Object.keys(themes);
-    
-    // let change=keys.filter(key=>key==event);
-     console.log(themes[event].color);
-    document.body.style.backgroundColor= themes[event].backgroundColor;
-    document.body.style.color= themes[event].color;
+     //console.log(event.target);
+    //console.log(event.target.id);
+   
+   document.body.style.backgroundColor= themes[event.target.id].backgroundColor;
+   document.body.style.color= themes[event.target.id].color;
 }
 
 module.exports = changeTheme
